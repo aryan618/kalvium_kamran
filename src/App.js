@@ -6,6 +6,7 @@ import StudentCard from "./Components/StudentCard"; // Import the StudentCard co
 import students from "./Components/StudentData"; // Import your student data
 import SearchBar from "./Components/SearchBar";
 import FilterButtons from "./Components/FilterButtons";
+
 const App = () => {
   const [attendanceData, setAttendanceData] = useState(
     students.map((student) => ({ ...student, isPresent: false }))
